@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="DiagnosticCenterBillManagementApp.UI.MasterPage" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Home</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+
+                    <ul class="nav navbar-nav">
+                        
+                         <li>
+                             <asp:HyperLink ID="HyperLink6" NavigateUrl="~/UI/Default.aspx" runat="server">Home</asp:HyperLink></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Setup <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <asp:HyperLink ID="lnk1" NavigateUrl="~/UI/TestTypeUI.aspx" runat="server">Test Type</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink1" NavigateUrl="~/UI/TestUI.aspx" runat="server">Test </asp:HyperLink></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Test Request<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <asp:HyperLink ID="HyperLink4" NavigateUrl="~/UI/TestRequestEntryUI.aspx" runat="server">Entry</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink5" NavigateUrl="~/UI/PaymentUI.aspx" runat="server">Payment </asp:HyperLink></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Report <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <asp:HyperLink ID="HyperLink2" NavigateUrl="~/UI/TestWiseReportUI.aspx" runat="server">Test Wise</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink3" NavigateUrl="~/UI/TypeWiseUI.aspx" runat="server">Type Wise </asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink41" NavigateUrl="~/UI/UnpaidBillReportUI.aspx" runat="server">Unpaid Bill </asp:HyperLink></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        
+    <marquee style="color: blueviolet ;font-weight: bold;"> Developed By MD Mahfuzur Rahman, Md. Arif Hossain, Rakib Hasan, Tofayel Ahmed</marquee>
+    </form>
+</body>
+</html>
